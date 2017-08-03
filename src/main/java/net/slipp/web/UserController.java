@@ -8,7 +8,7 @@ public class UserController {
 
 	@PostMapping("/create")
 	public String create(String userId, String password, String name, String email) {
-		System.out.println("userId : " + userId);
+		System.out.println("userId : " + userId + " name : " + name);
 		return "index";
 	}
 }
