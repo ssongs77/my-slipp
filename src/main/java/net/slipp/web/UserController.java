@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class UserController {
 
 	@PostMapping("/create")
-	public String create(String userId, String password, String name, String email) {
-		System.out.println("userId : " + userId + " name : " + name);
+	public String create(User user) {
+		System.out.println("user : " + user);
 		return "index";
 	}
 }

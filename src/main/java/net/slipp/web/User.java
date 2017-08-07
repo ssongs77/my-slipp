@@ -1,6 +1,7 @@
 package net.slipp.web;
 
 public class User {
+
 	private String userId;
 	private String password;
 	private String name;
@@ -22,4 +23,8 @@ public class User {
 		this.email = email;
 	}
 
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", password=" + password + ", name=" + name + ", email=" + email + "]";
+	}
 }
