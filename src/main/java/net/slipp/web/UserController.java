@@ -41,7 +41,7 @@ public class UserController {
 
 		if (!password.equals(user.getPassword())) {
 			System.out.println("Login Failure!");
-			return "redirect:/users/loginForm";
+			return "redirect:/users/loginForm"; 
 		}
 
 		session.setAttribute("user", user);
