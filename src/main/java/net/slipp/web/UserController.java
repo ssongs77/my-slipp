@@ -79,7 +79,7 @@ public class UserController {
 	public String updateForm(@PathVariable Long id, Model model, HttpSession session) {
 		// Object tempUser = session.getAttribute("sessionedUser");
 		// if (tempUser == null) {
-		if (HttpSessionUtils.isLoginuser(session)) {
+		if (HttpSessionUtils.isLoginUser(session)) {
 			return "redirect:/users/loginForm";
 		}
 
@@ -102,7 +102,7 @@ public class UserController {
 		System.out.println("update newUser :" + updatedUser);
 		// Object tempUser = session.getAttribute("sessionedUser");
 		// if (tempUser == null) {
-		if (HttpSessionUtils.isLoginuser(session)) {
+		if (HttpSessionUtils.isLoginUser(session)) {
 			return "redirect:/users/loginForm";
 		}
 		// User sessionedUser = (User) tempUser;
