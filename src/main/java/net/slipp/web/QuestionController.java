@@ -41,5 +41,4 @@ public class QuestionController {
 		
 		return "redirect:/"; //질문하기 완료시 처음으로 이동
 	}
-
 }
