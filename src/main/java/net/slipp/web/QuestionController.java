@@ -36,7 +36,7 @@ public class QuestionController {
 			return "/users/loginForm";
 		}
 		User sessionUser = HttpSessionUtils.getUserFromSession(session);
-		Question newQuestion = new Question(sessionUser.getUserId(), title, contents);
+		Question newQuestion = new Question(sessionUser, title, contents);
 		questionRepository.save(newQuestion);
 		
 		return "redirect:/"; //질문하기 완료시 처음으로 이동
