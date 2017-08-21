@@ -45,4 +45,10 @@ public class Question {
 		}
 		return createDate.format(DateTimeFormatter.ofPattern("yyyy.MM.dd HH:mm:ss"));
 	}
+
+	public void update(String title, String contents) {
+		// TODO Auto-generated method stub
+		this.title = title;
+		this.contents = contents;
+	}
 }
